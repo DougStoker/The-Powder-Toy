@@ -313,7 +313,7 @@ def findLibs(env, conf):
 			conf.CheckLib('dl')
 
 	#Look for fftw
-	if not GetOption('nofft') and not GetOption('renderer') and not conf.CheckLib(['fftw3f', 'fftw3f-3', 'libfftw3f-3', 'libfftw3f']):
+	if not GetOption('nofft') and not GetOption('renderer') and not conf.CheckLib(['fftw3', 'fftw3f', 'fftw3f-3', 'libfftw3f-3', 'libfftw3f']):
 			FatalError("fftw3f development library not found or not installed")
 
 	#Look for bz2
